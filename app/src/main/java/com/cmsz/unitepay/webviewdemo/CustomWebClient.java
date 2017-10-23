@@ -9,6 +9,7 @@ import android.content.pm.ResolveInfo;
 import android.net.MailTo;
 import android.net.Uri;
 import android.util.Log;
+import android.webkit.WebResourceRequest;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
@@ -29,6 +30,8 @@ public class CustomWebClient extends WebViewClient {
         this.mContext = context;
         this.mWebView = webView;
     }
+
+
 
     @Override
     public boolean shouldOverrideUrlLoading(WebView view, String url) {
@@ -93,6 +96,7 @@ public class CustomWebClient extends WebViewClient {
         }
         return ret;
     }
+
 
     public boolean startActivityForUrl(WebView tab, String url) {
 
