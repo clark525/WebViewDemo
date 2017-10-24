@@ -38,6 +38,7 @@ public class CustomWebClient extends WebViewClient {
         if (url.startsWith("about:")) {
             return super.shouldOverrideUrlLoading(view, url);
         }
+
         if (url.contains("mailto:")) {
             MailTo mailTo = MailTo.parse(url);
             Intent intent = new Intent(Intent.ACTION_SEND);

@@ -8,7 +8,7 @@
 
     <EditText
         android:id="@+id/et"
-        android:text="http://wxpay.wxutil.com/mch/pay/h5.v2.php"
+        android:text="file:///android_asset/alipay.html"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"

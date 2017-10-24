@@ -84,7 +84,7 @@ public class WebViewActivity extends Activity {
         mWebView.setVerticalScrollbarOverlay(true);
 
         mWebView.setWebViewClient(new CustomWebClient(this, mWebView));
-
+//        url = "file:///android_asset/alipay.html";
         mWebView.loadUrl(url);
 
     }
